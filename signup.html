@@ -8,9 +8,10 @@
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
 
@@ -24,20 +25,20 @@
                         <h2 class="form-title">Sign up</h2>
                         <form action="/customer-signup" method="post" class="register-form" id="register-form">
                             <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <label for="name"><i class="fas fa-user"></i></label>
                                 <input type="text" name="fname" id="fname" placeholder="Your Name"/>
                             </div>
                             <div class="form-group">
-                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <label for="email"><i class="fas fa-envelope "></i></label>
                                 <input type="email" name="email" id="email" placeholder="Your Email"/>
                             </div>
                             <div class="form-group">
-                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <label for="pass"><i class="fas fa-key"></i></label>
                                 <input type="password" name="pass" id="pass" placeholder="Password" data-validation="length" data-validation-length="min8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <label for="re-pass"><i class="fas fa-lock"></i></label>
                                 <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
                             </div>
                             <div class="form-group exists">
@@ -53,9 +54,9 @@
                         </form>
                     </div>
                     <div class="signup-image">
-                        <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
-                        <a href="/login" class="signup-image-link">I am already member</a>
-                        <a href="/resto_membership" class="membership-image-link">Take a Membership for your Restaurant</a>
+                        <figure><img src="public/images/signup-image.jpg" alt="sing up image"></figure>
+                        <a href="/login.html" class="signup-image-link">I am already member</a>
+                        <a href="/resto_membership.html" class="membership-image-link">Take a Membership for your Restaurant</a>
                     </div>
                 </div>
             </div>
@@ -78,7 +79,7 @@
         }
         getParameters();
     </script>
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="public/vendor/jquery/jquery.min.js"></script>
     <!-- <script src="js/main.js"></script> -->
 </body>
 </html>
