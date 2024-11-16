@@ -5,6 +5,7 @@
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="public/css/styles.css" />
         <script src="public/js/store.js" async></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
         <header class="main-header">
@@ -17,6 +18,7 @@
             </nav>
             <h1 class="band-name band-name-large">The Generics</h1>
         </header>
+        
         <section class="container content-section">
             <h2 class="section-header">MUSIC</h2>
             <div class="shop-items">
@@ -33,7 +35,7 @@
                     <img class="shop-item-image" src="Images/Album 2.png">
                     <div class="shop-item-details">
                         <span class="shop-item-price">$14.99</span>
-                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
@@ -54,6 +56,7 @@
                 </div>
             </div>
         </section>
+
         <section class="container content-section">
             <h2 class="section-header">MERCH</h2>
             <div class="shop-items">
@@ -75,6 +78,7 @@
                 </div>
             </div>
         </section>
+
         <section class="container content-section">
             <h2 class="section-header">CART</h2>
             <div class="cart-row">
@@ -89,30 +93,36 @@
                 <span class="cart-total-price">$0</span>
             </div>
             <form action="/json" method="post">
-                <button class="btn btn-primary btn-purchase" type="submit" >PURCHASE</button>
+                <button class="btn btn-primary btn-purchase" type="submit">PURCHASE</button>
             </form>
         </section>
+
         <footer class="main-footer">
             <div class="container main-footer-container">
                 <h3 class="band-name">The Generics</h3>
                 <ul class="nav footer-nav">
                     <li>
                         <a href="https://www.youtube.com" target="_blank">
-                            <img src="Images/YouTube Logo.png">
+                            <i class="fab fa-youtube"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.spotify.com" target="_blank">
-                            <img src="Images/Spotify Logo.png">
+                            <i class="fab fa-spotify"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com" target="_blank">
-                            <img src="Images/Facebook Logo.png">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/1234567890" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
                         </a>
                     </li>
                 </ul>
             </div>
         </footer>
-    </body>
+    </body>
 </html>

@@ -47,9 +47,6 @@ app.post("/customer-signup",(req,res)=>{
         if(result.length===0){
             
             gemail=email;
-            
-            
-            
             function mailSend(email)
 	        {
                 //nodemailer
@@ -73,7 +70,6 @@ app.post("/customer-signup",(req,res)=>{
                         
                 }
                 });
-
                 var mailOptions = {
                 from: 'dineazy01@gmail.com',
                 to: email,
@@ -112,8 +108,6 @@ app.post("/customer-signup",(req,res)=>{
 
 
 })
-
-
 app.post("/verification",function(req,res){
 	var otpKey = req.body.otp;
 	// var password =req.body.password;
@@ -139,11 +133,9 @@ app.post("/verification",function(req,res){
 	}
 	else {console.log("OTP not matched"); res.send("signin failure");}
 })
-
 app.get("/login",(req,res)=>{
     res.sendFile(__dirname+"/stafflogin.html");
 })
-
 app.get("/verification",(req,res)=>{
     res.sendFile(__dirname+"/verification.html");
 })
